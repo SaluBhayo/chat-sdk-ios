@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		03B9379C1ECF141500C90AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03B9379B1ECF141500C90AEE /* GoogleService-Info.plist */; };
+		8BEB3F7F1ED03A680082F408 /* BBackendless.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F771ED03A680082F408 /* BBackendless.m */; };
+		8BEB3F801ED03A680082F408 /* BBackendlessModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F791ED03A680082F408 /* BBackendlessModule.m */; };
+		8BEB3F811ED03A680082F408 /* BBackendlessPushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F7B1ED03A680082F408 /* BBackendlessPushHandler.m */; };
+		8BEB3F821ED03A680082F408 /* BBackendlessUploadHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F7D1ED03A680082F408 /* BBackendlessUploadHandler.m */; };
+		8BEB3F831ED03A680082F408 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB3F7E1ED03A680082F408 /* README.md */; };
 		AC7777E9AC4696C5650C0624 /* Pods_ChatSDK_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A95ECCEDC395C4185D9A1 /* Pods_ChatSDK_Demo.framework */; };
 		AC7BD99C1E0874B400C785EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7BD99B1E0874B400C785EE /* main.m */; };
 		AC7BD99F1E0874B400C785EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7BD99E1E0874B400C785EE /* AppDelegate.m */; };
@@ -21,6 +26,15 @@
 		03B9379B1ECF141500C90AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A6C898A6E2363FFF39375AA /* Pods-ChatSDK Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSDK Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatSDK Demo/Pods-ChatSDK Demo.release.xcconfig"; sourceTree = "<group>"; };
 		369A95ECCEDC395C4185D9A1 /* Pods_ChatSDK_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatSDK_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEB3F761ED03A680082F408 /* BBackendless.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBackendless.h; sourceTree = "<group>"; };
+		8BEB3F771ED03A680082F408 /* BBackendless.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBackendless.m; sourceTree = "<group>"; };
+		8BEB3F781ED03A680082F408 /* BBackendlessModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBackendlessModule.h; sourceTree = "<group>"; };
+		8BEB3F791ED03A680082F408 /* BBackendlessModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBackendlessModule.m; sourceTree = "<group>"; };
+		8BEB3F7A1ED03A680082F408 /* BBackendlessPushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBackendlessPushHandler.h; sourceTree = "<group>"; };
+		8BEB3F7B1ED03A680082F408 /* BBackendlessPushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBackendlessPushHandler.m; sourceTree = "<group>"; };
+		8BEB3F7C1ED03A680082F408 /* BBackendlessUploadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBackendlessUploadHandler.h; sourceTree = "<group>"; };
+		8BEB3F7D1ED03A680082F408 /* BBackendlessUploadHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBackendlessUploadHandler.m; sourceTree = "<group>"; };
+		8BEB3F7E1ED03A680082F408 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AC7BD9971E0874B400C785EE /* ChatSDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatSDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7BD99B1E0874B400C785EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7BD99D1E0874B400C785EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BEB3F751ED03A680082F408 /* Backendless */ = {
+			isa = PBXGroup;
+			children = (
+				8BEB3F761ED03A680082F408 /* BBackendless.h */,
+				8BEB3F771ED03A680082F408 /* BBackendless.m */,
+				8BEB3F781ED03A680082F408 /* BBackendlessModule.h */,
+				8BEB3F791ED03A680082F408 /* BBackendlessModule.m */,
+				8BEB3F7A1ED03A680082F408 /* BBackendlessPushHandler.h */,
+				8BEB3F7B1ED03A680082F408 /* BBackendlessPushHandler.m */,
+				8BEB3F7C1ED03A680082F408 /* BBackendlessUploadHandler.h */,
+				8BEB3F7D1ED03A680082F408 /* BBackendlessUploadHandler.m */,
+				8BEB3F7E1ED03A680082F408 /* README.md */,
+			);
+			name = Backendless;
+			path = ../../ChatSDK/ChatSDKModules/Backendless;
+			sourceTree = "<group>";
+		};
 		AC0BCADF675425D258C8F005 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				03B9379B1ECF141500C90AEE /* GoogleService-Info.plist */,
+				8BEB3F751ED03A680082F408 /* Backendless */,
 				AC7BD99D1E0874B400C785EE /* AppDelegate.h */,
 				AC7BD99E1E0874B400C785EE /* AppDelegate.m */,
 				AC7BD9A01E0874B400C785EE /* ViewController.h */,
@@ -221,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -233,7 +265,12 @@
 			files = (
 				AC7BD9A21E0874B400C785EE /* ViewController.m in Sources */,
 				AC7BD99F1E0874B400C785EE /* AppDelegate.m in Sources */,
+				8BEB3F7F1ED03A680082F408 /* BBackendless.m in Sources */,
+				8BEB3F821ED03A680082F408 /* BBackendlessUploadHandler.m in Sources */,
 				AC7BD99C1E0874B400C785EE /* main.m in Sources */,
+				8BEB3F801ED03A680082F408 /* BBackendlessModule.m in Sources */,
+				8BEB3F831ED03A680082F408 /* README.md in Sources */,
+				8BEB3F811ED03A680082F408 /* BBackendlessPushHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

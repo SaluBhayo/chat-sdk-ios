@@ -8,6 +8,7 @@ target 'ChatSDK Demo' do
   pod "ChatSDKUI", :path => "../ChatSDK/ChatSDKUI"
   pod "ChatSDKCoreData", :path => "../ChatSDK/ChatSDKCoreData"
   pod "ChatSDKFirebaseAdapter", :path => "../ChatSDK/ChatSDKFirebaseAdapter"
+  pod "ChatSDKModules/Backendless", :path => "../ChatSDK/ChatSDKModules"
 
 #   pod "ChatSDKFirebase/TypingIndicator", :path => "../../ChatSDK/ChatSDKFirebase"
 #   pod "ChatSDKFirebase/VideoMessages", :path => "../../ChatSDK/ChatSDKFirebase"

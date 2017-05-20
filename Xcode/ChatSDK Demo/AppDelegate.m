@@ -26,7 +26,7 @@
 //#import <ChatSDKModules/KeyboardOverlayOptions.h>
 //#import <ChatSDKModules/StickerMessages.h>
 
-//#import "BBackendlessPushHandler.h"
+#import "BBackendlessPushHandler.h"
 //#import "BBackendlessUploadHandler.h"
 
 //#import "BFirebaseSocialLoginHandler.h"
@@ -78,9 +78,9 @@
     [BNetworkManager sharedManager].a.auth.challengeViewController = [[BLoginViewController alloc] initWithNibName:Nil bundle:Nil];
     
     /* Backendless Push handler */
-    //BBackendlessPushHandler * pushHandler = [[BBackendlessPushHandler alloc] initWithAppKey:[BSettingsManager backendlessAppId] secretKey:[BSettingsManager backendlessSecretKey] versionKey:[BSettingsManager backendlessVersionKey]];
-    //[[BNetworkManager sharedManager].a setPush:pushHandler];
-    //[[BNetworkManager sharedManager].a.push registerForPushNotificationsWithApplication:application launchOptions:launchOptions];
+    BBackendlessPushHandler * pushHandler = [[BBackendlessPushHandler alloc] initWithAppKey:[BSettingsManager backendlessAppId] secretKey:[BSettingsManager backendlessSecretKey] versionKey:[BSettingsManager backendlessVersionKey]];
+    [[BNetworkManager sharedManager].a setPush:pushHandler];
+    [[BNetworkManager sharedManager].a.push registerForPushNotificationsWithApplication:application launchOptions:launchOptions];
 
     // Set the root view controller
     [self.window setRootViewController:mainViewController];
